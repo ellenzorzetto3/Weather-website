@@ -65,3 +65,5 @@ function search(event) {
 
   axios.get(apiUrl).then(sayTime);
 }
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
