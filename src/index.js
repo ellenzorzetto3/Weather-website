@@ -24,10 +24,11 @@ function sayTime(response) {
   timeElement.innerHTML = formatDate(dateAnswer);
 
   let icon = document.querySelector("#emoji");
-  let iconAnswer = `<img
+  let iconElement = `<img
                 src="${response.data.condition.icon_url}"
                 class="current-temperature-icon"
               />`;
+  icon.innerHTML = iconElement;
 }
 
 function formatDate(date) {
